@@ -19,10 +19,10 @@
     // ---------------------------------------
     // NSString *pathToPdfDoc = [[NSBundle mainBundle] pathForResource:@"pdfPath" ofType:@"pdf"];
     // NSURL *pdfUrl = [NSURL fileURLWithPath:pathToPdfDoc];
-    ecified document
-        CGPDFDocumentRef document = CGPDFDocumentCreateWithURL((CFURLRef)passedResourcePath);
-        int pageCount = (int) CG
-    // Count the pages within the spPDFDocumentGetNumberOfPages(document);
+    CGPDFDocumentRef document = CGPDFDocumentCreateWithURL((CFURLRef)passedResourcePath);
+    int pageCount = (int) CGPDFDocumentGetNumberOfPages(document);
+    
+    // Count the pages within the specified document CGPDFDocumentGetNumberOfPages(document);
     return pageCount;
 }
 
