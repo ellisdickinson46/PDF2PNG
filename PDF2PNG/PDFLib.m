@@ -21,7 +21,7 @@
     // NSURL *pdfUrl = [NSURL fileURLWithPath:pathToPdfDoc];
     CGPDFDocumentRef document = CGPDFDocumentCreateWithURL((CFURLRef)passedResourcePath);
     int pageCount = (int) CGPDFDocumentGetNumberOfPages(document);
-    
+       
     // Count the pages within the specified document CGPDFDocumentGetNumberOfPages(document);
     return pageCount;
 }
